@@ -1446,6 +1446,16 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@craco/craco@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@craco/craco/-/craco-6.0.0.tgz#f4e66e82f5bc77671dc0a5e839c3269e2414fe0f"
+  integrity sha512-NSgcGqTlQ+XTBJ/AhE0ngdfab5xIyx/06yrRPkvDH02V90ejrL6bSM54k3+h3OjGE/SO7nmF1MqfFwemPo8kVw==
+  dependencies:
+    cross-spawn "^7.0.0"
+    lodash "^4.17.15"
+    semver "^7.3.2"
+    webpack-merge "^4.2.2"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -5311,6 +5321,14 @@ cpy@^8.1.1:
     p-filter "^2.1.0"
     p-map "^3.0.0"
 
+craco-esbuild@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/craco-esbuild/-/craco-esbuild-0.2.0.tgz#bd01a9385876fc86915ec8a215df548734de4c0a"
+  integrity sha512-BjY+pLbXPGGlK1Lpo0VUvqkeD0NNMIkwLG2XknJ31o5sdqwX0dPn9YbnD9eWo9cASkdTr7N9qtVNDj1AKfMikA==
+  dependencies:
+    esbuild-jest "0.3.0"
+    esbuild-loader "^2.8.0"
+
 create-ecdh@^4.0.0:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.4.tgz#d6e7f4bffa66736085a0762fd3a632684dabcc4e"
@@ -6374,6 +6392,26 @@ es6-symbol@^3.1.1, es6-symbol@~3.1.3:
   dependencies:
     d "^1.0.1"
     ext "^1.1.2"
+
+esbuild-jest@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/esbuild-jest/-/esbuild-jest-0.3.0.tgz#2e8a0b876196befaf3870637ca4aa04cfdbdb785"
+  integrity sha512-J1ZHN4IbQiLJAsCMK2XkPYZsTrD8ius+1B09RVqfrvmT+BnwGdR6CLvRq6DGopOaEmdkr4AIk/J6LQUhRQDsSg==
+
+esbuild-loader@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/esbuild-loader/-/esbuild-loader-2.8.0.tgz#50c916c87ca8b4bcfe41cf050248cb70d09e4bb6"
+  integrity sha512-Pv8WPtSozaGLryTi4c91fMmho7DRhy6zRyh6v3R5DGMPBuXhyVoBdMY4we9uCa0m/CvM5v/XvWyltAsjQ+Wx8w==
+  dependencies:
+    esbuild "^0.8.33"
+    loader-utils "^2.0.0"
+    type-fest "^0.20.2"
+    webpack-sources "^2.2.0"
+
+esbuild@^0.8.33:
+  version "0.8.33"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.33.tgz#4e24ab4e780b08ff5527171bf5a684594c8b56e9"
+  integrity sha512-2ms/P6Y9zJfopR9dKo2vHzhXKfGSNlquVVoVOF8YnhjuzZVrvManMVBPadBsR/t7jzIkRnwqvxrs7d4f3C3eyg==
 
 escalade@^3.0.2, escalade@^3.1.1:
   version "3.1.1"
@@ -13094,7 +13132,7 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
-source-list-map@^2.0.0:
+source-list-map@^2.0.0, source-list-map@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
@@ -13290,6 +13328,13 @@ store2@^2.7.1:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
+
+storybook-preset-craco@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/storybook-preset-craco/-/storybook-preset-craco-0.0.3.tgz#60c03fe58c9a4c7692397b753f5a47e62b8f2a88"
+  integrity sha512-nnLsTpKKYyyzSAWQYvaoTp0W309jZli8kBucttrU+hxQqVvSdYNXlNS+KXLrCKhIJhl86jWqGJLznMXczLHE7A==
+  dependencies:
+    "@storybook/preset-create-react-app" "^3.1.5"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
@@ -13997,6 +14042,11 @@ type-fest@^0.11.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
   integrity sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==
 
+type-fest@^0.20.2:
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
+  integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
+
 type-fest@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
@@ -14586,6 +14636,13 @@ webpack-manifest-plugin@2.2.0:
     object.entries "^1.1.0"
     tapable "^1.0.0"
 
+webpack-merge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
+  integrity sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==
+  dependencies:
+    lodash "^4.17.15"
+
 webpack-sources@^1.1.0, webpack-sources@^1.3.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"
@@ -14593,6 +14650,14 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0, webpack-sources@^1.4.0, webpack-
   dependencies:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
+
+webpack-sources@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-2.2.0.tgz#058926f39e3d443193b6c31547229806ffd02bac"
+  integrity sha512-bQsA24JLwcnWGArOKUxYKhX3Mz/nK1Xf6hxullKERyktjNMC4x8koOeaDNTA2fEJ09BdWLbM/iTW0ithREUP0w==
+  dependencies:
+    source-list-map "^2.0.1"
+    source-map "^0.6.1"
 
 webpack-virtual-modules@^0.2.2:
   version "0.2.2"

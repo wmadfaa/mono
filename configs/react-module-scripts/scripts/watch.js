@@ -1,4 +1,5 @@
 const rollup = require("rollup");
+process.env.mode = 'development'
 const {
   inputOptions,
   outputOptions,

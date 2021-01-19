@@ -1,4 +1,6 @@
+const path = require("path");
 const rollup = require("rollup");
+process.env.mode = "production";
 const {
   inputOptions,
   outputOptions,
@@ -7,22 +9,26 @@ const {
   useTs,
 } = require("../utils/configs");
 
-async function bundle(input, output) {
+async function bundle(input, output, name = "") {
   // create a bundle
   const bundle = await rollup.rollup(input);
   // generate output specific code in-memory
   for (let options of output) {
+    const fileName = path.basename(options.file);
+    console.info(`${name}generating... ${fileName}`);
     await bundle.generate(options);
+    console.info(`${name}writing... ${fileName}`);
     await bundle.write(options);
   }
+  console.info(`${name}done`);
   // closes the bundle
   await bundle.close();
 }
 
 async function build() {
-  await bundle(inputOptions, outputOptions);
+  await bundle(inputOptions, outputOptions, "code: ");
   if (useTs) {
-    await bundle(tsInputOptions, tsOutputOptions);
+    await bundle(tsInputOptions, tsOutputOptions, "types: ");
   }
 }
 

@@ -13,8 +13,7 @@ const paths = require("./paths");
 
 // postcss plugins
 const autoprefixer = require("autoprefixer");
-
-const production = !process.env.ROLLUP_WATCH;
+const production = process.env.mode === 'production';
 
 const inputOptions = {
   input: paths.SOURCE,
@@ -37,6 +36,7 @@ const inputOptions = {
       jsxFragment: "React.Fragment",
       loaders: {
         ".json": "json",
+        '.js': 'jsx'
       },
     }),
     del({ force: true, targets: [path.resolve(paths.MODULE_OUT_DIR, "*")] }),

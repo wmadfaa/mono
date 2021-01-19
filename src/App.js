@@ -1,12 +1,16 @@
 import React from "react";
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { TsComponent } from "@mono/ts-component";
+import { JsComponent } from "@mono/js-component";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <TsComponent name="ts-component" />
+        <JsComponent name="js-component" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

@@ -1,0 +1,17 @@
+*
+
+!packages
+!components
+!configs
+
+!public
+!src
+!craco.config.js
+!README.md
+
+!nginx
+!.env
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+

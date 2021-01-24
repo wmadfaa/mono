@@ -1,0 +1,49 @@
+{
+  "name": "@mono/js-component",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": "true",
+  "author": "Wasim Almadfaa <wm.madfaa@gmail.com> (http://wmadfaa.dev)",
+  "readme": "README.md",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "source": "src/index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "install": "pnpm build",
+    "build": "rms build",
+    "watch": "rms watch",
+    "test": "craco test",
+    "storybook": "start-storybook -p 6007",
+    "build-storybook": "build-storybook"
+  },
+  "cracoConfig": "../../craco.config.js",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@craco/craco": "^6.0.0",
+    "@mono/react-module-scripts": "workspace:^0.1.0",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-docs": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/node-logger": "^6.1.14",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.14",
+    "@testing-library/dom": "^7.29.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "app-root-path": "^3.0.0",
+    "craco-esbuild": "^0.2.0",
+    "react-scripts": "4.0.1",
+    "sass": "^1.32.4",
+    "storybook-preset-craco": "^0.0.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}

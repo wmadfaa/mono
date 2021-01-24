@@ -21,7 +21,8 @@
     "build": "craco build",
     "test": "craco test",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "init:component": "rms init --useTs --dir=components"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.0.0",
+    "@mono/react-module-scripts": "workspace:^0.1.0",
     "@storybook/addon-actions": "^6.1.14",
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-links": "^6.1.14",

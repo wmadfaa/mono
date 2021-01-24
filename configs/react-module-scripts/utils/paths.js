@@ -43,6 +43,8 @@ if ("source" in pkg) {
 }
 
 module.exports = {
+  CWD,
+  moduleResolve,
   MODULE_PKG,
   MODULE_OUT_DIR,
   MAIN,
